@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina da Beleza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Oficina da Beleza</h1>
+        
+        <div class="agenda-container">
+            <!-- Formulário de Agendamento -->
+            <div class="form-agendamento">
+                <h2>Novo Agendamento</h2>
+                <form id="formAgendamento">
+                    <div class="form-group">
+                        <label for="nomeCliente">Nome do Cliente:</label>
+                        <input type="text" id="nomeCliente" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="servico">Serviço:</label>
+                        <select id="servico" required>
+                            <option value="">Selecione...</option>
+                            <option value="Corte">Corte</option>
+                            <option value="Coloração">Coloração</option>
+                            <option value="Manicure">Manicure</option>
+                            <option value="Pedicure">Pedicure</option>
+                            <option value="Maquiagem">Maquiagem</option>
+                            <option value="Progressiva">Progressiva</option>
+                            <option value="Botox">Botox</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" required>
+                    </div>
+                    
+                    <button type="submit">Agendar</button>
+                </form>
+            </div>
+            
+            <!-- Lista de Agendamentos -->
+            <div class="lista-agendamentos">
+                <h2>Agendamentos</h2>
+                <div id="agendamentos">
+                    <!-- Os agendamentos aparecerão aqui via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
